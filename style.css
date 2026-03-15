@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: #f7f7f7;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+body.dark {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background: #01471e;
+    color: white;
+    padding-bottom: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#theme-toggle {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.section {
+    padding: 60px 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.skills-grid span {
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+body.dark .skills-grid span {
+    background: #333;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+button {
+    padding: 12px;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+body.dark button {
+    background: #333;
+}
+
+.contact-note {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+footer {
+    background: #160544;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+.badge {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+    color: #111;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    transition: transform 250ms cubic-bezier(.2,.8,.2,1), box-shadow 250ms, filter 250ms;
+    transform-origin: center bottom;
+    cursor: default;
+    backface-visibility: hidden;
+    will-change: transform, box-shadow;
+}
+
+body.dark .badge {
+    background: #333;
+    color: #ffffff
+}
+.badge::after {
+    content: "";
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    bottom: -6px;
+    height: 8px;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.18), rgba(0,0,0,0.06));
+    border-radius: 50%;
+    transition: transform 250ms cubic-bezier(.2,.8,.2,1), opacity 250ms;
+    z-index: -1;
+    opacity: 1;
+}
+
+.badge:hover,
+.badge:focus {
+    transform: translateY(-14px) rotateX(8deg);
+    box-shadow: 0 28px 40px rgba(0,0,0,0.28);
+    filter: saturate(1.02);
+}
+
+.badge:hover::after,
+.badge:focus::after {
+    transform: translateY(6px) scale(1.06);
+    opacity: 0.9;
+}
+
+.job {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.job:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+

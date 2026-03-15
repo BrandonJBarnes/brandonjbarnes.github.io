@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Barnes | Programmer & IT Professional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./resources/Favicon.png">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><img src="./resources/Logo.png" width="160"></div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+
+            <button id="theme-toggle">🌙</button>
+        </nav>
+
+        <div class="hero">
+            <h1>Brandon Barnes</h1>
+            <h2>Programmer & IT Professional</h2>
+            <p>Specializing in embedded systems, automation, optimization, and teaching the next generation of developers.</p>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I'm Brandon Barnes, a programmer and IT professional with experience in embedded systems, 
+            automation, CAN bus programming, and teaching computer science fundamentals. I enjoy solving 
+            complex problems, optimizing systems, and building tools that make life easier for others.
+        </p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Core Skills</h2>
+        <div class="skills-grid">
+            <span class = 'badge'>Troubleshooting</span>
+            <span class = 'badge'>Research</span>
+            <span class = 'badge'>Optimization</span>
+            <span class = 'badge'>Project Management</span>
+            <span class = 'badge'>Problem Solving</span>
+            <span class = 'badge'>Cybersecurity</span>
+        </div>
+
+        <h3>Programming Languages</h3>
+        <div class="skills-grid">
+            <span class = 'badge'>Python</span>
+            <span class = 'badge'>C</span>
+            <span class = 'badge'>SQL</span>
+            <span class = 'badge'>R</span>
+            <span class = 'badge'>Bash</span>
+            <span class = 'badge'>VBA</span>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+
+        <div class="job">
+            <h3>Kalamazoo RESA — Computer Programming Technical Assistant</h3>
+            <p class="date">May 2025 – Present</p>
+            <span></span>
+            <ul>
+                <li>Taught high school students the fundamentals of programming</li>
+                <li>Debugged and explained code to students</li>
+                <li>Instructed in JavaScript, Python, Bash, HTML, and CSS</li>
+                <li>Promoted strong design and coding principles</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Firefly Integrations — Associate Software Engineer</h3>
+            <p class="date">June 2022 – November 2023</p>
+            <span></span>
+            <ul>
+                <li>Programmed RVC CAN bus systems in C</li>
+                <li>Developed an automatic engine stop system for coaches</li>
+                <li>Optimized multiple coaches for improved efficiency</li>
+                <li>Reduced workflow bottlenecks by minimizing data entry requirements</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Western Aerospace Launch Initiative — Student Programmer</h3>
+            <p class="date">June 2021 – August 2021</p>
+            <span></span>
+            <ul>
+                <li>Adapted Python code into C to reduce program size</li>
+                <li>Researched communication protocols for thermistors and radio control</li>
+                <li>Collaborated with subsystem teams to maximize development efficiency</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Project Gallery</h2>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="./resources/Arcade.jpg" alt="Arcade Rebuild">
+                <p>Arcade Rebuild – reusing an old arcade cabinet with modern emulators for WMU computer club</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="./resources/3dPrinter.jpg" alt="3D Printer">
+                <p>3D Printer Modding – Repairs and custom modifications</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="./resources/Raspi.jpg" alt="Raspberry Pi">
+                <p>Self‑Hosted IoT – Local Home Assistant automation</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="./resources/Glasses.jpg" alt="LED Matrix Glasses">
+                <p>LED Matrix Glasses – Custom wearable display project</p>
+            </div>
+        </div>
+    </section>
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+
+    <form id="contact-form" action="mailto:contact@brandonjbarnes.com" method="POST" enctype="text/plain">
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Message</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+    <footer>
+        <p>© 2026 Brandon Barnes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
