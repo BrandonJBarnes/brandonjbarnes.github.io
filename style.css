@@ -197,3 +197,174 @@ body.dark .badge {
     padding-bottom: 0;
 }
 
+
+.hamburger {
+    display: none;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#nav-menu {
+    transition: max-height 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 20px;
+        position: relative;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo {
+        order: 1;
+        flex: 1;
+    }
+
+    .hamburger {
+        display: block;
+        order: 2;
+    }
+
+    #theme-toggle {
+        order: 3;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #01471e;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        z-index: 1000;
+        order: 4;
+        width: 100%;
+    }
+
+    nav ul.open {
+        max-height: 500px;
+        padding: 20px 0;
+    }
+
+    nav li {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+    }
+
+    .badge {
+        padding: 4px 8px;
+        font-size: 0.9rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .job h3 {
+        font-size: 1.1rem;
+    }
+
+    .job ul {
+        padding-left: 20px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    nav {
+        padding: 15px 15px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.1rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .section {
+        padding: 30px 15px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 8px;
+    }
+
+    .badge {
+        padding: 3px 6px;
+        font-size: 0.8rem;
+    }
+
+    .job h3 {
+        font-size: 1rem;
+    }
+
+    .job ul {
+        padding-left: 15px;
+    }
+
+    .job li {
+        font-size: 0.9rem;
+    }
+}
+

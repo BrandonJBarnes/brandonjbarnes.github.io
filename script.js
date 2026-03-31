@@ -3,12 +3,15 @@ const toggle = document.getElementById("theme-toggle");
 toggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 
-
     toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
 
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
 
-document.getElementById("contact-form").addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Thanks! Your message has been recorded (demo mode).");
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+    hamburger.textContent = navMenu.classList.contains("open") ? "✕" : "☰";
 });
+
+
